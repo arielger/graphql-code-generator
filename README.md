@@ -53,7 +53,8 @@ And create a config like below:
 schema: http://localhost:3000/graphql
 generates:
   src/types.ts:
-    - typescript
+    plugins:
+      - typescript
 ```
 
 Then, run the code-generator using `graphql-codegen` command:
